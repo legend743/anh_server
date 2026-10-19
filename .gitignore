@@ -1,37 +1,42 @@
-HELP.md
 
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/test/**/target/
+# Maven build output
+target/
 
-### STS ###
-.apt_generated
+# Environment variables and local secrets
+.env
+.env.*
+!.env.example
+run-local.ps1
+
+# IDEs
+### Spring Tool Suite / Eclipse ###
+.apt_generated/
 .classpath
 .factorypath
 .project
-.settings
+.settings/
 .springBeans
-.sts4-cache
+.sts4-cache/
 
 ### IntelliJ IDEA ###
-.idea
+.idea/
 *.iws
 *.iml
 *.ipr
-*gitattributes
-mvnw
-mvnw.cmd
-.mvn
 
-### NetBeans ###
+### VS Code ###
+.vscode/
+
+# NetBeans
 /nbproject/private/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
 
-### VS Code ###
-.vscode/
-/application.properties
+# Build output
+build/
+
+# Logs
+*.log
+logs/
