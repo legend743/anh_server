@@ -4,6 +4,7 @@ package com.ahujanursinghome.hospital_management.event;
 import lombok.*;
 
 @Data
+@Builder 
 @Getter
 @Setter
 @NoArgsConstructor
