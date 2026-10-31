@@ -10,7 +10,6 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.Paths;
 import java.util.List;
 import java.util.Optional;
 
@@ -24,6 +23,7 @@ private String uploadDir;
     private DoctorRepo doctorRepo;
 @Autowired
 private SaveImageHelperMethod imageHelperMethod;
+
 
 @Autowired
 private ImageUrlBuilder imageUrlBuilder;

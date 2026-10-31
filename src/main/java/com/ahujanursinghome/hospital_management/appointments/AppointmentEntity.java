@@ -3,12 +3,14 @@ package com.ahujanursinghome.hospital_management.appointments;
 import jakarta.persistence.*;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.Date;
 
 @Entity
+@Builder 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -25,6 +27,7 @@ public class AppointmentEntity {
         private String symptoms;
         private Date appointmentDate;
        private Character Gender;
+       private boolean status; //false for pending true for done
 
 
 }

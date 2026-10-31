@@ -4,6 +4,7 @@ package com.ahujanursinghome.hospital_management.doctors;
 import lombok.*;
 
 @Data
+@Builder 
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
